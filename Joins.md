@@ -1,30 +1,30 @@
-SQL Joins
+**SQL Joins**
 
 In SQL (Structured Query Language), joins are used to combine data from two or more tables based on shared columns.
 This allows you to create more complex and informative results than querying a single table.
 Types of SQL Joins:
 
-1. Inner Join:
+1. **Inner Join:**
 
 Returns only the rows where there's a match in both tables based on the specified join condition.
 It's the most common type of join.
 
-2. Left Outer Join:
+2. **Left Outer Join:**
 
 Returns all rows from the left table, plus matching rows from the right table.
 If a row in the left table doesn't have a match in the right table, it'll still be included in the result, with NULL values for the right table's columns.
 
-3. Right Outer Join:
+3. **Right Outer Join:**
 
 Returns all rows from the right table, plus matching rows from the left table.
 It's essentially the opposite of a left outer join.
 
-4. Full Outer Join:
+4. **Full Outer Join:**
 
 Returns all rows from both tables, regardless of whether they have a match in the other table.
 NULL values are used to fill in missing data for non-matching rows.
 
-Join Syntax:
+**Join Syntax:**
 
 SQL
 SELECT columns
