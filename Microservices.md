@@ -2,6 +2,7 @@
 Microservice is a small, loosly coupled distributed service. Microservice architecture evolved as a solution to the scalability, independently deployable. These services are organized around business capabilities and communicate with each other via APIs.
 
 **Features of microservices:
+
 **1. Scalability**
 
 Microservices are designed to be independently deployable and scalable, which means that organizations can easily add or remove instances of individual services as needed to handle changes in traffic or demand.
@@ -27,7 +28,7 @@ Service Registery(Discovery Server)->It manage the service registry and instance
 **API Gateway:** An entry point for clients to access the microservices ecosystem. API gateways handle routing, authentication, rate limiting, and protocol translation, simplifying client interactions with multiple services.
 
 **Circuit Breaker:** It prevents cascading failures by temporarily halting requests to a failing service. Circuit breakers monitor service health and open circuits when failures exceed a threshold, providing graceful degradation.
-circuit breaker has three distinct states: Closed, Open, and Half-Open
+circuit breaker has three distinct states: **Closed, Open, and Half-Open**
 
 1. Closed State:- During normal operation, the circuit breaker remains in the closed state, allowing requests to pass through. In this phase, the system consistently monitors for failures. Upon surpassing a predefined failure threshold, it transitions to the open state.
 
