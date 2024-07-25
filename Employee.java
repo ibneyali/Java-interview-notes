@@ -3,13 +3,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Employee{
+	private Long id;
 	private String name;
-	private Double Sal;
+	private Double sal;
 	private String dept;
 	
-	public Employee(String name, Double sal, String dept) {
+	public Employee(Long id, String name, Double sal, String dept) {
+		this.id=id;
 		this.name = name;
-		Sal = sal;
+		this.sal = sal;
 		this.dept = dept;
 	}
 	public String getName() {
@@ -19,10 +21,10 @@ public class Employee{
 		this.name = name;
 	}
 	public Double getSal() {
-		return Sal;
+		return sal;
 	}
 	public void setSal(Double sal) {
-		Sal = sal;
+		this.sal = sal;
 	}
 	public String getDept() {
 		return dept;
@@ -30,9 +32,16 @@ public class Employee{
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", Sal=" + Sal + ", dept=" + dept + "]";
+		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + ", dept=" + dept + "]";
 	}
+	
 	
 }
