@@ -18,4 +18,4 @@ public class ClimbingStairs {
       System.out.println("Number of ways to climb " + n + " stairs: " + climbStairs(n));
     }
 
-} 
+}
