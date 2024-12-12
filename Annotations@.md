@@ -18,8 +18,16 @@
 2. @RestController: A specialized version of @Controller that returns JSON, XML, or other content directly.
 3. @RequestMapping: Maps HTTP requests to handler methods.
 4. @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PatchMapping: Specialized versions of @RequestMapping for HTTP methods.
-5. @RequestParam: Binds request parameters to method parameters.
-6. @PathVariable: Binds URI template variables to method parameters.
+5. @RequestParam: Binds request parameters to method parameters. Or Extracts values from query string of a URL.
+example: - @GetMapping("/products")
+public String getProducts(@RequestParam(value = "category" , required = false) String category){
+
+}
+6. @PathVariable: Binds URI template variables to method parameters. Or Extracts values form the URI template of URL
+example: - @GetMapping("/products/{productId}")
+public String getProducts(@PathVariable Long category){
+    
+}
 7. @RequestBody: Binds the HTTP request body to a method parameter.
 8. @ResponseBody: Writes the return value to the HTTP response body.
 9. @ModelAttribute: Binds form data to model attributes.
